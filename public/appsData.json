@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "image": "https://cdn-icons-png.flaticon.com/512/2983/2983788.png",
+    "title": "Notely",
+    "companyName": "CreativeApps Ltd",
+    "description": "Notely is a smooth and beautifully crafted note-taking app designed to help you capture ideas instantly, sync notes across devices, and organize them with smart tags.",
+    "size": 42,
+    "reviews": 12800,
+    "ratingAvg": 4.6,
+    "downloads": 5.2,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 6710 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://cdn-icons-png.flaticon.com/512/868/868786.png",
+    "title": "Swift Cleaner",
+    "companyName": "Boostify Tech",
+    "description": "Swift Cleaner boosts device performance with powerful junk cleaning, memory optimization, and battery-saving tools.",
+    "size": 36,
+    "reviews": 9800,
+    "ratingAvg": 4.4,
+    "downloads": 12.4,
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 390 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 4190 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://cdn-icons-png.flaticon.com/512/2965/2965567.png",
+    "title": "FitTrack Pro",
+    "companyName": "Wellness Studio",
+    "description":  "FitTrack Pro is your ultimate fitness companion, designed to help you achieve your health and wellness goals efficiently. The app provides personalized workout plans that adapt to your fitness level and progress over time. With smart calorie tracking, you can monitor your daily intake and understand how your nutrition impacts your performance. The progress charts give a visual overview of your workouts, calories burned, and weight trends. You can track your heart rate and other vital metrics during exercises for a holistic view of your health. FitTrack Pro also includes guided video tutorials, ensuring correct form and preventing injuries. The app allows you to set reminders for workouts, hydration, and sleep, making it easier to maintain a balanced lifestyle. For motivation, it offers achievement badges, streak tracking, and challenges with friends. Users can create custom workout routines, mixing cardio, strength, and flexibility exercises according to their needs. Detailed analytics provide insights on which workouts are most effective, helping you optimize your training. Integration with wearable devices ensures seamless data sync and real-time feedback. The minimalist interface is designed to reduce cognitive load, keeping you focused on your goals. FitTrack Pro also offers meditation and recovery exercises to improve mental wellness. Notifications gently guide you throughout the day without being intrusive. Whether you are a beginner or an advanced athlete, the app adapts to your pace. FitTrack Pro makes fitness engaging, structured, and sustainable, combining tracking, guidance, and motivation in one platform.",
+    "size": 54,
+    "reviews": 16500,
+    "ratingAvg": 4.7,
+    "downloads": 8.9,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 4100 },
+      { "name": "5 star", "count": 11180 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://cdn-icons-png.flaticon.com/512/1829/1829586.png",
+    "title": "PhotoCraft",
+    "companyName": "PixelForge",
+    "description": "PhotoCraft offers AI-powered filters, retouch tools, and pro-level editing features to transform your images instantly.",
+    "size": 71,
+    "reviews": 18700,
+    "ratingAvg": 4.5,
+    "downloads": 15.3,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 11250 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+    "title": "TravelMate",
+    "companyName": "GoWorld Inc.",
+    "description": "TravelMate gives you flight tracking, hotel suggestions, offline maps, and real-time travel alerts.",
+    "size": 63,
+    "reviews": 9200,
+    "ratingAvg": 4.3,
+    "downloads": 6.1,
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 3660 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://cdn-icons-png.flaticon.com/512/1170/1170678.png",
+    "title": "FinanceFlow",
+    "companyName": "MoneySoft",
+    "description": "FinanceFlow helps track expenses, manage budgets, monitor subscriptions, and optimize your financial goals.",
+    "size": 45,
+    "reviews": 14900,
+    "ratingAvg": 4.6,
+    "downloads": 11.2,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 3900 },
+      { "name": "5 star", "count": 8410 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://cdn-icons-png.flaticon.com/512/9715/9715288.png",
+    "title": "TaskFlow",
+    "companyName": "Prodify Apps",
+    "description": "TaskFlow helps you manage projects, deadlines, priorities, and team collaboration with ease.",
+    "size": 28,
+    "reviews": 6800,
+    "ratingAvg": 4.2,
+    "downloads": 4.8,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 1700 },
+      { "name": "5 star", "count": 3250 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://cdn-icons-png.flaticon.com/512/2729/2729007.png",
+    "title": "EduMaster",
+    "companyName": "LearnHub",
+    "description": "EduMaster includes online courses, quizzes, study materials, and personalized learning paths.",
+    "size": 59,
+    "reviews": 13400,
+    "ratingAvg": 4.8,
+    "downloads": 9.5,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 9260 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "title": "NewsHub",
+    "companyName": "DailyTech Media",
+    "description": "NewsHub gives real-time breaking news, category filters, notifications, and offline reading support.",
+    "size": 34,
+    "reviews": 7400,
+    "ratingAvg": 4.0,
+    "downloads": 7.1,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 2800 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://cdn-icons-png.flaticon.com/512/726/726623.png",
+    "title": "ChatWave",
+    "companyName": "WaveTech",
+    "description": "ChatWave provides secure messaging, HD calls, media sharing, and encrypted chats for complete privacy.",
+    "size": 78,
+    "reviews": 26500,
+    "ratingAvg": 4.7,
+    "downloads": 22.3,
+    "ratings": [
+      { "name": "1 star", "count": 430 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 18570 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://cdn-icons-png.flaticon.com/512/727/727218.png",
+    "title": "MusicBeats",
+    "companyName": "TuneSphere",
+    "description": "MusicBeats lets you stream music, create playlists, discover artists, and enjoy offline songs.",
+    "size": 88,
+    "reviews": 31000,
+    "ratingAvg": 4.8,
+    "downloads": 30.4,
+    "ratings": [
+      { "name": "1 star", "count": 350 },
+      { "name": "2 star", "count": 620 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 23630 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://cdn-icons-png.flaticon.com/512/854/854929.png",
+    "title": "MapGo",
+    "companyName": "GeoSoft",
+    "description": "MapGo offers real-time GPS navigation, smart route suggestions, and offline downloadable maps.",
+    "size": 66,
+    "reviews": 19800,
+    "ratingAvg": 4.5,
+    "downloads": 13.9,
+    "ratings": [
+      { "name": "1 star", "count": 280 },
+      { "name": "2 star", "count": 640 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 3900 },
+      { "name": "5 star", "count": 11480 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://cdn-icons-png.flaticon.com/512/3208/3208676.png",
+    "title": "WeatherLive",
+    "companyName": "SkyNet Apps",
+    "description": "WeatherLive delivers accurate forecasts, storm alerts, radar maps, and real-time temperature tracking.",
+    "size": 41,
+    "reviews": 11200,
+    "ratingAvg": 4.4,
+    "downloads": 9.8,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 480 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 5120 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://cdn-icons-png.flaticon.com/512/4840/4840561.png",
+    "title": "HealthBuddy",
+    "companyName": "MediCore Labs",
+    "description": "HealthBuddy tracks your sleep, steps, heart rate, hydration, and provides daily wellness recommendations.",
+    "size": 52,
+    "reviews": 17400,
+    "ratingAvg": 4.6,
+    "downloads": 11.7,
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 360 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 3700 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://cdn-icons-png.flaticon.com/512/5087/5087579.png",
+    "title": "ShopSmart",
+    "companyName": "BuyRight Ltd.",
+    "description": "ShopSmart finds best deals, compares prices, tracks sales, and sends discount alerts instantly.",
+    "size": 47,
+    "reviews": 8800,
+    "ratingAvg": 4.3,
+    "downloads": 7.6,
+    "ratings": [
+      { "name": "1 star", "count": 260 },
+      { "name": "2 star", "count": 420 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 4320 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://cdn-icons-png.flaticon.com/512/4697/4697260.png",
+    "title": "VideoCraft",
+    "companyName": "UltraEdit Co.",
+    "description": "VideoCraft provides pro-level tools for trimming, effects, transitions, overlays, and AI auto-editing.",
+    "size": 92,
+    "reviews": 22400,
+    "ratingAvg": 4.7,
+    "downloads": 18.4,
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 520 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 5100 },
+      { "name": "5 star", "count": 15470 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://cdn-icons-png.flaticon.com/512/2721/2721267.png",
+    "title": "FoodZone",
+    "companyName": "QuickEats",
+    "description": "FoodZone helps you order food, track deliveries, explore restaurants, and get personalized suggestions.",
+    "size": 58,
+    "reviews": 19300,
+    "ratingAvg": 4.5,
+    "downloads": 16.1,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 480 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 10970 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://cdn-icons-png.flaticon.com/512/1828/1828911.png",
+    "title": "MindSpace",
+    "companyName": "Calmify Studio",
+    "description": "MindSpace offers guided meditation, stress relief tools, breathing exercises, and sleep soundscapes.",
+    "size": 39,
+    "reviews": 9400,
+    "ratingAvg": 4.6,
+    "downloads": 5.7,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 5620 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://cdn-icons-png.flaticon.com/512/4206/4206277.png",
+    "title": "SecureVault",
+    "companyName": "LockIt Labs",
+    "description": "SecureVault stores passwords, encrypts files, and protects your digital identity with advanced security.",
+    "size": 31,
+    "reviews": 7700,
+    "ratingAvg": 4.4,
+    "downloads": 4.2,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 3970 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://cdn-icons-png.flaticon.com/512/483/483947.png",
+    "title": "BookNest",
+    "companyName": "Readify Global",
+    "description": "BookNest gives you ebooks, audiobooks, reading stats, bookmarks, and personalized book suggestions.",
+    "size": 69,
+    "reviews": 15800,
+    "ratingAvg": 4.7,
+    "downloads": 10.3,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 290 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 9930 }
+    ]
+  }
+]
