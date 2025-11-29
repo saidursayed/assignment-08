@@ -3,6 +3,7 @@ import { loadInstallApps, removeFromWishlist } from "../../utils/localStorage";
 import Container from "../../Components/Container/Container";
 import { FiDownload } from "react-icons/fi";
 import { FaStar } from "react-icons/fa6";
+import { toast } from "react-toastify";
 
 const Installation = () => {
   const [installed, setInstalled] = useState(() => loadInstallApps());
@@ -10,12 +11,7 @@ const Installation = () => {
 
   const [sortOrder, setSortOrder] = useState("none");
 
-  //   useEffect(() => {
-  //     const saveList = JSON.parse(localStorage.getItem("wishlist"));
-  //     if (saveList) setWishlist(saveList);
-  //   }, []);
 
-  if (!installed.length) return <p>No Data Available</p>;
 
   const sortedItem = (() => {
     if (sortOrder === "size-asc") {
@@ -27,10 +23,14 @@ const Installation = () => {
     }
   })();
 
-  const handleRemove = (id) => {
+  const handleRemove = (id, title) => {
     removeFromWishlist(id);
 
     setInstalled((prev) => prev.filter((p) => p.id !== id));
+
+    toast.warning(`🗑️ ${title} un-installed from your Device`, {
+      position: "top-center",
+    });
   };
 
   return (
@@ -95,7 +95,7 @@ const Installation = () => {
                   </div>
                   <div>
                     <button
-                      onClick={() => handleRemove(insApp.id)}
+                      onClick={() => handleRemove(insApp.id, insApp.title)}
                       className="btn btn-lg text-white text-base font-semibold bg-[#00D390]"
                     >
                       Uninstall
