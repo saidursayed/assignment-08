@@ -8,10 +8,10 @@ import { IoLogoGooglePlaystore } from "react-icons/io5";
 const Banner = () => {
   return (
     <div>
-      <div className="bg-[#f5f5f5] pt-20">
+      <div className="bg-[#f5f5f5] pt-20 px-4 md:px-0">
         <Container>
           <div className="text-center flex flex-col items-center">
-            <h1 className="font-bold text-7xl opacity-90">
+            <h1 className="font-bold text-6xl md:text-7xl opacity-90">
               We Build <br />{" "}
               <span className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-black">
                 Productive
@@ -70,7 +70,7 @@ const Banner = () => {
               <h2 className="font-bold text-4xl mb-10 text-center">
                 Trusted by Millions, Built for You
               </h2>
-              <div className="flex justify-between items-center gap-6 text-center">
+              <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-center">
                 <div className="flex items-center gap-4">
                   <div className="space-y-4">
                     <p className="opacity-80">Total Downloads</p>

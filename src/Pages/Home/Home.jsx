@@ -14,10 +14,10 @@ const Home = () => {
 
   if (isLoading) return <LoadingSpinner />;
   return (
-    <div>
+    <div >
       <Banner></Banner>
 
-      <div className="bg-[#f5f5f5] py-20">
+      <div className="bg-[#f5f5f5] py-20 px-4 md:px-0">
         <Container>
           <div>
             <div className="text-center mb-10">

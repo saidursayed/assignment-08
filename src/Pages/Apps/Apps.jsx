@@ -31,7 +31,7 @@ const Apps = () => {
   if (isLoading || searchLoading) return <LoadingSpinner />;
 
   return (
-    <div className="bg-[#f5f5f5] py-20">
+    <div className="bg-[#f5f5f5] py-20 px-4 md:px-0">
       <div>
         <Container>
           <div>
@@ -51,12 +51,12 @@ const Apps = () => {
       <div>
         <Container>
           <div className="flex justify-between items-center py-5 px-4 md:px-8 lg:px-12">
-            <h1 className="text-3xl font-semibold">
+            <h1 className="text-3xl flex-1 font-semibold">
               <span className="text-2xl font-semibold text-[#001931]">
                 ({searchApps.length}) Apps Found
               </span>
             </h1>
-            <label className="input bg-transparent">
+            <label className="input flex-1 bg-transparent">
               <svg
                 className="h-[1.3em] opacity-50"
                 xmlns="http://www.w3.org/2000/svg"
