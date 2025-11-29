@@ -68,7 +68,7 @@ const Installation = () => {
 
           <div>
             {sortedItem.map((insApp) => (
-              <div>
+              <div key={insApp.id}>
                 <div className="bg-white mb-4 rounded-sm p-4 flex justify-between items-center">
                   <div className="flex items-center gap-4">
                     <figure className="bg-[#d9d9d9] rounded-lg p-3.5 w-20">

@@ -36,7 +36,7 @@ const Home = () => {
             </div>
             <div className="text-center mt-10">
               <Link
-                className="btn btn-lg text-white px-10 py-3.5 bg-[linear-gradient(125.07deg,#632EE3,#9F62F2)] font-semibold"
+                className="btn btn-lg hover:shadow-2xl text-white px-10 py-3.5 bg-[linear-gradient(125.07deg,#632EE3,#9F62F2)] font-semibold"
                 to="/apps"
               >
                 Show All

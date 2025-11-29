@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useApps from "../../Hooks/useApps";
 import { useParams } from "react-router";
 import useLoading from "../../Hooks/useLoading";
@@ -17,15 +17,28 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { updatedInstallAppList } from "../../utils/localStorage";
+import {
+  loadInstallApps,
+  updatedInstallAppList,
+} from "../../utils/localStorage";
 import ErrorApp from "../../Components/ErrorApp/ErrorApp";
+import { toast } from "react-toastify";
 
 const AppDetails = () => {
   const { isLoading } = useLoading();
   const { apps } = useApps();
   const { id } = useParams();
-  const [installed, setInstalled] = useState(false);
   const app = apps.find((a) => a.id === Number(id));
+
+  const [installed, setInstalled] = useState(false);
+
+  useEffect(() => {
+    const installedApps = loadInstallApps();
+    const isAlreadyInstalled = installedApps.some(
+      (item) => item.id === Number(id)
+    );
+    setInstalled(isAlreadyInstalled);
+  }, [id]);
 
   const {
     companyName,
@@ -39,15 +52,20 @@ const AppDetails = () => {
     title,
   } = app || {};
 
-
-
+  // Loading
   if (isLoading) return <LoadingSpinner></LoadingSpinner>;
 
-  if (!app) return <ErrorApp></ErrorApp>
+  // Error Page
+  if (!app) return <ErrorApp></ErrorApp>;
 
   const handleClick = () => {
     updatedInstallAppList(app);
+
     setInstalled(true);
+
+    toast.success(`Yahoo ⚡!! ${title} Installed Successfully`, {
+      position: "top-center",
+    });
   };
 
   return (
@@ -97,7 +115,7 @@ const AppDetails = () => {
                   onClick={handleClick}
                   disabled={installed}
                   className={`btn btn-xl text-xl mt-4 font-semibold py-3.5 px-5 rounded-sm 
-                  bg-[#00D390] text-white`}
+                  bg-[#00D390] text-white skeleton hover:shadow-2xs`}
                 >
                   {installed ? "Installed" : `Install Now (${size} MB)`}
                 </button>
@@ -109,6 +127,7 @@ const AppDetails = () => {
             <div className="divider"></div>
           </div>
 
+          {/* Chart */}
           <div>
             <h2 className="text-2xl font-semibold text-[#001931]">Ratings</h2>
             <div className="p-4 h-[400px] ">
