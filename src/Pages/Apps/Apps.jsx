@@ -51,12 +51,12 @@ const Apps = () => {
       <div>
         <Container>
           <div className="flex justify-between items-center py-5 px-4 md:px-8 lg:px-12">
-            <h1 className="text-3xl flex-1 font-semibold">
+            <h1 className="text-3xl flex-1 md:flex-none font-semibold">
               <span className="text-2xl font-semibold text-[#001931]">
                 ({searchApps.length}) Apps Found
               </span>
             </h1>
-            <label className="input flex-1 bg-transparent">
+            <label className="input flex-1 md:flex-none bg-transparent">
               <svg
                 className="h-[1.3em] opacity-50"
                 xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ const Apps = () => {
               </div>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 md:px-8 lg:px-12  ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-4 md:px-8 lg:px-12  ">
               {searchApps.map((app) => (
                 <AppCard key={app.id} app={app}></AppCard>
               ))}
