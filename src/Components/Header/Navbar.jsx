@@ -9,7 +9,7 @@ import { MdOutlineInstallDesktop } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <div className="shadow-2xl px-4 md:px-8 lg:px-12">
+    <div className="py-0.5 px-3 md:px-8 lg:px-12">
       <Container>
         <div className="navbar p-0">
           <div className="navbar-start">
@@ -52,7 +52,7 @@ const Navbar = () => {
             </div>
             <Link to="/" className="text-xl md:text-2xl font-bold">
               <div className="flex items-center gap-0.5 md:gap-1">
-                <img className="w-10" src={Logo} alt="" />
+                <img className="w-9 md:w-10" src={Logo} alt="" />
                 <h2 className="font-bold text-base md:text-2xl text-transparent bg-clip-text bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)]">HERO.IO</h2>
               </div>
             </Link>

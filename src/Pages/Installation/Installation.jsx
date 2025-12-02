@@ -5,17 +5,20 @@ import { FiDownload } from "react-icons/fi";
 import { FaStar } from "react-icons/fa6";
 import { toast } from "react-toastify";
 import { GrInstall } from "react-icons/gr";
+import useLoading from "../../Hooks/useLoading";
+import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner";
 
 const Installation = () => {
+  const { isLoading } = useLoading();
   const [installed, setInstalled] = useState(() => loadInstallApps());
 
   const [sortOrder, setSortOrder] = useState("none");
 
   const sortedItem = (() => {
-    if (sortOrder === "size-asc") {
-      return [...installed].sort((a, b) => a.size - b.size);
-    } else if (sortOrder === "size-desc") {
-      return [...installed].sort((a, b) => b.size - a.size);
+    if (sortOrder === "downloads-asc") {
+      return [...installed].sort((a, b) => a.downloads - b.downloads);
+    } else if (sortOrder === "downloads-desc") {
+      return [...installed].sort((a, b) => b.downloads - a.downloads);
     } else {
       return installed;
     }
@@ -31,6 +34,10 @@ const Installation = () => {
     });
   };
 
+  
+  if (isLoading) return <LoadingSpinner />;
+
+  
   return (
     <div className="bg-[#d9d9d9] py-20 px-4 md:px-8 lg:px-12">
       <Container>
@@ -61,10 +68,10 @@ const Installation = () => {
                 onChange={(e) => setSortOrder(e.target.value)}
               >
                 <option disabled={true} value="none">
-                  Sort By Size
+                  Sort By downloads
                 </option>
-                <option value="size-asc">Low-High</option>
-                <option value="size-desc">High-Low</option>
+                <option value="downloads-asc">Low-High</option>
+                <option value="downloads-desc">High-Low</option>
               </select>
             </label>
           </div>

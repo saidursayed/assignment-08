@@ -4,11 +4,11 @@ import Logo from "../../assets/logo.png";
 const LoadingSpinner = () => {
   return (
     <div className="h-screen flex items-center justify-center bg-[#f5f5f5] ">
-      <p className="text-3xl text-[#627282] font-semibold flex items-center gap-2 animate-zoom-text">
+      <p className="text-2xl md:text-3xl text-[#627282] font-semibold flex items-center gap-2 animate-zoom-text">
         <span>L</span>
         <img
           src={Logo}
-          className="w-10 inline-block animate-spin-slow"
+          className="w-8 md:w-10 inline-block animate-spin-slow"
           alt="Loading"
         />
         <span>OADING</span>

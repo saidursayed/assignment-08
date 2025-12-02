@@ -69,11 +69,11 @@ const AppDetails = () => {
   };
 
   return (
-    <div className="bg-[#d9d9d9] py-20 px-4 md:px-8 lg:px-12">
+    <div className="bg-[#d9d9d9] py-10 md:py-20 px-4 md:px-8 lg:px-12">
       <Container>
         <div>
           <div className="flex flex-col md:flex-row gap-10 ">
-            <figure className="bg-white  p-8 rounded-lg w-[250px] md:w-[350px] shadow-xl">
+            <figure className="bg-white p-6 md:p-8 rounded-lg w-[250px] md:w-[350px] shadow-xl">
               <img src={image} className="" alt="Shoes" />
             </figure>
             <div className="flex-1">
@@ -169,11 +169,11 @@ const AppDetails = () => {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-[#001931] mb-6">
+            <h2 className="text-xl md:text-2xl font-semibold text-[#001931] mb-4 md:mb-6">
               Description
             </h2>
             <div>
-              <p className="text-xl text-[#627382]">{description}</p>
+              <p className="text-base md:text-xl text-[#627382]">{description}</p>
             </div>
           </div>
         </div>
