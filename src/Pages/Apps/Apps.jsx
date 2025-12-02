@@ -30,7 +30,7 @@ const Apps = () => {
     setSearchLoading(true);
     const timer = setTimeout(() => {
       setSearchLoading(false);
-    }, 500); // 0.5s loader for search
+    }, 500); 
 
     return () => clearTimeout(timer);
   }, [term]);
@@ -107,7 +107,7 @@ const Apps = () => {
           ) : searchApps.length === 0 ? (
             <div className="py-10">
               <div>
-                <h1 className="text-7xl font-bold text-[#627282] text-center">
+                <h1 className="text-4xl md:text-6xl font-bold text-[#627282] text-center">
                   No App Found
                 </h1>
               </div>
