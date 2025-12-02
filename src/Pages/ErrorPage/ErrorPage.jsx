@@ -10,25 +10,29 @@ const ErrorPage = () => {
     <div>
       <Navbar></Navbar>
 
-      <div className="bg-[#d9d9d9] py-20">
+      <div className="bg-[#d9d9d9] py-10 md:py-20 px-4 md:px-8 lg:px-12">
         <Container>
-          <div className="flex  flex-col items-center justify-center h-screen">
-            <figure>
-              <img src={PageErrorImg} alt="" />
-            </figure>
-            <h2 className="text-5xl text-[#001931] font-semibold mt-[60px] mb-2">
-              Oops, page not found!
-            </h2>
-            <p className="text-xl text-[#627382]">
-              The page you are looking for is not available.
-            </p>
+          <div>
+            <div className="flex justify-center">
+              <figure>
+                <img src={PageErrorImg} alt="" />
+              </figure>
+            </div>
+            <div className="text-center">
+              <h2 className="text-4xl md:text-5xl text-[#001931] font-semibold mt-[60px] mb-2">
+                Oops, page not found!
+              </h2>
+              <p className="text-base md:text-xl text-[#627382]">
+                The page you are looking for is not available.
+              </p>
 
-            <Link
-              className="btn btn-lg mt-4 text-white px-10 py-3.5 bg-[linear-gradient(125.07deg,#632EE3,#9F62F2)] font-semibold"
-              to="/"
-            >
-              Go Back!
-            </Link>
+              <Link
+                className="btn md:btn-lg mt-4 text-white px-10 py-3.5 bg-[linear-gradient(125.07deg,#632EE3,#9F62F2)] font-semibold"
+                to="/"
+              >
+                Go Back!
+              </Link>
+            </div>
           </div>
         </Container>
       </div>

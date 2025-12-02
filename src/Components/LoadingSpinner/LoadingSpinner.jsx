@@ -3,7 +3,7 @@ import Logo from "../../assets/logo.png";
 
 const LoadingSpinner = () => {
   return (
-    <div className="h-screen flex items-center justify-center bg-white ">
+    <div className="h-screen flex items-center justify-center bg-[#f5f5f5] ">
       <p className="text-3xl text-[#627282] font-semibold flex items-center gap-2 animate-zoom-text">
         <span>L</span>
         <img

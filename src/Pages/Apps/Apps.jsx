@@ -4,6 +4,9 @@ import Container from "../../Components/Container/Container";
 import AppCard from "../../Components/AppCard/AppCard";
 import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner";
 import useLoading from "../../Hooks/useLoading";
+import { DiVisualstudio } from "react-icons/di";
+
+
 
 const Apps = () => {
   const { apps } = useApps();
@@ -12,10 +15,14 @@ const Apps = () => {
 
   const [searchLoading, setSearchLoading] = useState(false);
 
+
+
   const term = search.trim().toLocaleLowerCase();
   const searchApps = term
     ? apps.filter((app) => app.title.toLocaleLowerCase().includes(term))
     : apps;
+
+
 
   useEffect(() => {
     if (!term) return setSearchLoading(false);
@@ -28,18 +35,25 @@ const Apps = () => {
     return () => clearTimeout(timer);
   }, [term]);
 
-  if (isLoading || searchLoading) return <LoadingSpinner />;
+
+
+  if (isLoading) return <LoadingSpinner />;
+
+
 
   return (
-    <div className="bg-[#f5f5f5] py-20 px-4 md:px-0">
+    <div className="bg-[#f5f5f5] py-10 md:y-20 px-4 md:px-8 lg:px-12">
       <div>
         <Container>
           <div>
             <div className="text-center mb-10">
-              <h2 className="font-bold text-5xl text-[#001931]">
-                Our All Applications
-              </h2>
-              <p className="text-xl mt-4 text-[#627282]">
+              <div className="font-bold text-4xl md:text-5xl flex flex-col md:flex-row justify-center items-center gap-2.5">
+                <h2 className="text-[#001931]">Our All Applications</h2>
+                <span className="text-[#632EE3] text-5xl md:text-6xl">
+                  <DiVisualstudio />
+                </span>
+              </div>
+              <p className="text-base md:text-xl mt-4 text-[#627282]">
                 Explore All Apps on the Market developed by us. We code for
                 Millions
               </p>
@@ -50,12 +64,12 @@ const Apps = () => {
 
       <div>
         <Container>
-          <div className="flex justify-between items-center py-5 px-4 md:px-8 lg:px-12">
-            <h1 className="text-3xl flex-1 md:flex-none font-semibold">
-              <span className="text-2xl font-semibold text-[#001931]">
+          <div className="flex justify-between items-center gap-2.5 py-5">
+            <div className="flex-1 md:flex-none">
+              <span className="text-lg md:text-2xl font-semibold text-[#001931]">
                 ({searchApps.length}) Apps Found
               </span>
-            </h1>
+            </div>
             <label className="input flex-1 md:flex-none bg-transparent">
               <svg
                 className="h-[1.3em] opacity-50"
@@ -77,7 +91,7 @@ const Apps = () => {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 type="search"
-                className="text-base"
+                className="text-sm md:text-base"
                 required
                 placeholder="Search Apps"
               />
@@ -88,7 +102,9 @@ const Apps = () => {
 
       <div>
         <Container>
-          {searchApps.length === 0 ? (
+          {searchLoading ? (
+            <LoadingSpinner></LoadingSpinner>
+          ) : searchApps.length === 0 ? (
             <div className="py-10">
               <div>
                 <h1 className="text-7xl font-bold text-[#627282] text-center">
@@ -97,7 +113,7 @@ const Apps = () => {
               </div>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-4 md:px-8 lg:px-12  ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {searchApps.map((app) => (
                 <AppCard key={app.id} app={app}></AppCard>
               ))}

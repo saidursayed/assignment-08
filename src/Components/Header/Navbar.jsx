@@ -9,9 +9,9 @@ import { MdOutlineInstallDesktop } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <div className="shadow-2xl">
+    <div className="shadow-2xl px-4 md:px-8 lg:px-12">
       <Container>
-        <div className="navbar">
+        <div className="navbar p-0">
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -46,14 +46,14 @@ const Navbar = () => {
                   <NavLink to="/apps">Apps</NavLink>
                 </li>
                 <li>
-                  <NavLink>Installation</NavLink>
+                  <NavLink to="/installations">Installation</NavLink>
                 </li>
               </ul>
             </div>
-            <Link to="/" className="text-2xl font-bold">
-              <div className="flex items-center gap-1">
+            <Link to="/" className="text-xl md:text-2xl font-bold">
+              <div className="flex items-center gap-0.5 md:gap-1">
                 <img className="w-10" src={Logo} alt="" />
-                <h2 className="font-bold ">HERO.IO</h2>
+                <h2 className="font-bold text-base md:text-2xl text-transparent bg-clip-text bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)]">HERO.IO</h2>
               </div>
             </Link>
           </div>
@@ -75,9 +75,9 @@ const Navbar = () => {
               href="https://github.com/saidursayed"
               target="_blank"
               rel=""
-              className="btn btn-lg text-lg bg-[linear-gradient(125.07deg,#632EE3,#9F62F2_100%)] text-white flex items-center gap-2"
+              className="btn md:btn-lg md:text-lg bg-[linear-gradient(125.07deg,#632EE3,#9F62F2_100%)] text-white flex items-center gap-1 md:gap-2"
             >
-              <IoLogoGithub className="text-2xl" />
+              <IoLogoGithub className="text-xl md:text-2xl" />
               Contribute
             </a>{" "}
           </div>

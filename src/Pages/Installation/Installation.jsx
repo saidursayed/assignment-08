@@ -4,14 +4,12 @@ import Container from "../../Components/Container/Container";
 import { FiDownload } from "react-icons/fi";
 import { FaStar } from "react-icons/fa6";
 import { toast } from "react-toastify";
+import { GrInstall } from "react-icons/gr";
 
 const Installation = () => {
   const [installed, setInstalled] = useState(() => loadInstallApps());
-  console.log(installed);
 
   const [sortOrder, setSortOrder] = useState("none");
-
-
 
   const sortedItem = (() => {
     if (sortOrder === "size-asc") {
@@ -34,15 +32,18 @@ const Installation = () => {
   };
 
   return (
-    <div className="bg-[#d9d9d9] py-20 px-4 md:px-0">
+    <div className="bg-[#d9d9d9] py-20 px-4 md:px-8 lg:px-12">
       <Container>
         <div>
           <div>
             <div className="text-center mb-10">
-              <h2 className="font-bold text-5xl text-[#001931]">
-                Your Installed Apps
-              </h2>
-              <p className="text-xl mt-4 text-[#627282]">
+              <div className="font-bold text-4xl md:text-5xl flex flex-col md:flex-row justify-center items-center gap-2.5">
+                <h2 className="text-[#001931]">Your Installed Apps</h2>
+                <span className="text-[#632EE3] text-5xl md:text-6xl">
+                  <GrInstall />
+                </span>
+              </div>
+              <p className="text-base md:text-xl mt-4 text-[#627282]">
                 Explore All Trending Apps on the Market developed by us
               </p>
             </div>
@@ -59,7 +60,9 @@ const Installation = () => {
                 value={sortOrder}
                 onChange={(e) => setSortOrder(e.target.value)}
               >
-                <option disabled={true} value="none">Sort By Size</option>
+                <option disabled={true} value="none">
+                  Sort By Size
+                </option>
                 <option value="size-asc">Low-High</option>
                 <option value="size-desc">High-Low</option>
               </select>
@@ -69,26 +72,28 @@ const Installation = () => {
           <div>
             {sortedItem.map((insApp) => (
               <div key={insApp.id}>
-                <div className="bg-white mb-4 rounded-sm p-4 flex justify-between items-center">
-                  <div className="flex items-center gap-4">
-                    <figure className="bg-[#d9d9d9] rounded-lg p-3.5 w-20">
+                <div className="bg-white mb-4 rounded-sm p-2 md:p-4 flex justify-between items-center">
+                  <div className="flex items-center md:gap-4 gap-2">
+                    <figure className="bg-[#d9d9d9] rounded-lg p-2 md:p-3.5 w-16 md:w-20">
                       <img src={insApp.image} className="" alt="Shoes" />
                     </figure>
                     <div>
-                      <h2 className="text-[#001931] font-medium text-xl mb-4">
+                      <h2 className="text-[#001931] font-medium text-xl mb-2 md:mb-4">
                         {insApp.title}
                       </h2>
-                      <div className="flex gap-4">
-                        <div className="flex items-center font-medium text-[#00D390] gap-2 text-base rounded-sm">
+                      <div className="flex flex-wrap gap-2 md:gap-4">
+                        <div className="flex items-center font-medium text-[#00D390] gap-2 text-sm md:text-base rounded-sm">
                           <FiDownload />
                           <span>{insApp.downloads}M</span>
                         </div>
-                        <div className="flex items-center font-medium text-[#FF8811] gap-2 text-base rounded-sm">
+                        <div className="flex items-center font-medium text-[#FF8811] gap-2 text-sm md:text-base rounded-sm">
                           <FaStar />
                           <span>{insApp.ratingAvg}</span>
                         </div>
                         <div>
-                          <p className="text-[#627382] ">{insApp.size} MB</p>
+                          <p className="text-[#627382] text-sm md:text-base">
+                            {insApp.size} MB
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -96,7 +101,7 @@ const Installation = () => {
                   <div>
                     <button
                       onClick={() => handleRemove(insApp.id, insApp.title)}
-                      className="btn btn-lg text-white text-base font-semibold bg-[#00D390]"
+                      className="btn md:btn-lg text-white text-base font-semibold bg-[#00D390]"
                     >
                       Uninstall
                     </button>

@@ -8,23 +8,23 @@ import { IoLogoGooglePlaystore } from "react-icons/io5";
 const Banner = () => {
   return (
     <div>
-      <div className="bg-[#f5f5f5] pt-20 px-4 md:px-0">
+      <div className="bg-[#f5f5f5] pt-8 md:pt-20 px-4 md:px-0">
         <Container>
           <div className="text-center flex flex-col items-center">
-            <h1 className="font-bold text-6xl md:text-7xl opacity-90">
+            <h1 className="font-bold text-5xl md:text-7xl opacity-90">
               We Build <br />{" "}
               <span className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-black">
                 Productive
               </span>{" "}
               Apps
             </h1>
-            <p className="mt-4 text-xl text-[#627382]">
+            <p className="mt-4 text-base md:text-xl text-[#627382]">
               At HERO.IO , we craft innovative apps designed to make everyday
               life simpler, smarter, and more exciting. <br />
               Our goal is to turn your ideas into digital experiences that truly
               make an impact.
             </p>
-            <div className="my-10 flex gap-4">
+            <div className="my-10 flex flex-col md:flex-row gap-4">
               <a
                 href="https://play.google.com/"
                 target="_blank"
@@ -63,7 +63,7 @@ const Banner = () => {
         </Container>
       </div>
 
-      <div className="bg-[linear-gradient(125deg,#632EE3,#9F62F2)] py-20">
+      <div className="bg-[linear-gradient(125deg,#632EE3,#9F62F2)] py-10 md:py-20">
         <Container>
           <div className="flex justify-center text-white ">
             <div>
@@ -71,7 +71,7 @@ const Banner = () => {
                 Trusted by Millions, Built for You
               </h2>
               <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-center">
-                <div className="flex items-center gap-4">
+                <div className="flex flex-col md:flex-row items-center gap-4">
                   <div className="space-y-4">
                     <p className="opacity-80">Total Downloads</p>
                     <h3 className="font-extrabold text-5xl">29.6M</h3>
@@ -82,7 +82,7 @@ const Banner = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="flex flex-col md:flex-row items-center gap-4">
                   <div className="space-y-4">
                     <p className="opacity-80">Total Reviews</p>
                     <h3 className="font-extrabold text-5xl">906K</h3>
@@ -93,7 +93,7 @@ const Banner = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="flex flex-col md:flex-row items-center gap-4">
                   <div className="space-y-4">
                     <p className="opacity-80">Active Apps</p>
                     <h3 className="font-extrabold text-5xl">132+</h3>
